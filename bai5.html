@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+      <script>
+        let a = [0, 1];
+        for ( let i = 2; i < 10 ; i++){
+          a[ i ] = a[ i - 1 ] + a[ i - 2 ];
+        }
+        console.log("Dãy 10 số fibonanci: " + a.join(", "));
+      </script>
+</body>
+</html>
