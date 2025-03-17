@@ -6,14 +6,15 @@
 </head>
 <body>
        <script>
-         let a = prompt("nhập nhiệt độ hiện tại");
-         if ( a > 100) {
-           alert("nhiệt độ bạn nhập quá cao");
-         } else if ( a < 20) {
-           alert("nhiệt độ bạn nhập quá thấp");
-         } else {
-           alert("nhiệt độ ổn định");
-         }
+           let a = parseFloat(prompt("nhập nhiệt độ hiện tại"));
+           while ( a > 100 || a < 20) {
+               if ( a > 100) {
+                   a = parseFloat(prompt("nhiệt độ cao quá , hãy giảm nhiệt độ xuống"));
+               } else if ( a < 20) {
+                   a = parseFloat(prompt("nhiệt độ quá thấp hay tăng nhiệt độ lên"));
+               }
+           }
+           console.log("nhiệt độ ổn định" ,a);
        </script>
 </body>
 </html>
